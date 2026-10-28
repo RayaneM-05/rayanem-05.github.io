@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Pedido de pizza</title>
+</head>
+<body>
+  <h3>Pedido de pizza</h3>
+
+  <form>
+    <fieldset>
+      <legend>La pizza</legend>
+
+      <p>Ingredientes</p>
+      <label><input type="checkbox" name="ingredientes" value="queso"> Queso</label><br>
+      <label><input type="checkbox" name="ingredientes" value="pimiento"> Pimiento</label><br>
+      <label><input type="checkbox" name="ingredientes" value="cebolla"> Cebolla</label>
+
+      <p>Tamaño</p>
+      <label><input type="radio" name="tamano" value="pequena"> Pequeña</label><br>
+      <label><input type="radio" name="tamano" value="mediana"> Mediana</label><br>
+      <label><input type="radio" name="tamano" value="grande"> Grande</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos de entrega</legend>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre"><br>
+
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion"><br>
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono"><br>
+
+      <label for="instrucciones">Instrucciones especiales</label><br>
+      <textarea id="instrucciones" name="instrucciones" rows="10" cols="40"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Método de pago</legend>
+      <select name="pago">
+        <option value="efectivo">Efectivo</option>
+        <option value="tarjeta">Tarjeta</option>
+      </select>
+    </fieldset>
+
+    <button type="submit">Ok</button>
+  </form>
+</body>
+</html>
